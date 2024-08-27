@@ -5,7 +5,7 @@
         
         <!-- Logo -->
         <div class="flex items-center space-x-3">
-          <a href="/" class="flex items-center">
+          <a href="/resume" class="flex items-center">
             <span class="text-xl font-semibold ml-2 ">Tapiwa Motsi</span>
           </a>
         </div>
@@ -66,7 +66,7 @@
 
       <!-- Buttons -->
       <div class="mt-9 flex justify-center space-x-4 ">
-        <a href="../assets/resume.pdf" download class="bg-green-600 text-white px-6 py-2 rounded-md shadow hover:bg-green-700 transition duration-300">
+        <a href="../resume/assets/resume.pdf" download class="bg-green-600 text-white px-6 py-2 rounded-md shadow hover:bg-green-700 transition duration-300">
           Download CV
         </a>
         <a href="#about" class="bg-gray-200 text-gray-800 px-6 py-2 rounded-md shadow hover:bg-gray-300 transition duration-300">
