@@ -1,5 +1,8 @@
 <template>
-  <div id="app">
+  <AnimatedBackground/>
+  <Spinner v-if="loading" />
+  <div class=" relative" v-else id="app">
+   
     <header class="bg-white shadow-md">
       <div class="container mx-auto px-4 py-3 flex justify-between items-center">
         
@@ -106,6 +109,7 @@
   </section>
   <Footer/>
   </div>
+  
 </template>
 <script setup>
 import { ref, onMounted } from 'vue';
@@ -115,11 +119,21 @@ import Education from './components/Education.vue';
 import Skills from './components/Skills.vue';
 import Projects from './components/Projects.vue'
 import Footer from './components/Footer.vue'
+import Spinner from './components/Spinner.vue';
+import AnimatedBackground from './components/AnimatedBackground.vue';
 const texts = [
   'Software Engineer',
   'System Administrator',
   'System Security Analyst',
 ];
+
+const loading = ref(true);
+
+onMounted(() => {
+  setTimeout(() => {
+    loading.value = false;
+  }, 3000); // 3 seconds
+});
 const topText = ref([
   {
     id: 1,
