@@ -3,7 +3,7 @@
   <Spinner v-if="loading" />
   <div class=" relative" v-else id="app">
    
-    <header  class="shadow-md">
+    <header  class="shadow-md bg-white">
     <div class="container mx-auto px-4 py-3 flex justify-between items-center">
       <!-- Logo -->
       <div class="flex items-center space-x-3">
