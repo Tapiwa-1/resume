@@ -98,13 +98,22 @@
 
        <!-- School Experience -->
   <section id="education"class="mt-12 md:mt-16 px-4 md:px-0">
-    <Education/>
+    <div class="max-w-4xl mx-auto text-justify">
+      <Education/>
+    </div>
+    
   </section>
   <section id="skills"class="mt-12 md:mt-16 px-4 md:px-0">
-     <Skills/>
+    <div class="max-w-4xl mx-auto text-justify">
+      <Skills/>
+    </div>
+     
   </section>
   <section id="projects" class="mt-12 md:mt-16 px-4 md:px-0">
-   <Projects/>
+    <div class="max-w-4xl mx-auto text-justify">
+      <Projects/>
+    </div>
+   
   </section>
   <Footer/>
   </div>
