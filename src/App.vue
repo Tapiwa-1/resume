@@ -3,60 +3,59 @@
   <Spinner v-if="loading" />
   <div class=" relative" v-else id="app">
    
-    <header class="bg-white shadow-md">
-      <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-        
-        <!-- Logo -->
-        <div class="flex items-center space-x-3">
-          <a href="/resume" class="flex items-center">
-            <span class="text-xl font-semibold ml-2 ">Tapiwa Motsi</span>
-          </a>
-        </div>
-        
-        <!-- Navigation Links -->
-        <nav class="hidden md:flex space-x-8 text-gray-700">
-          <a href="#about" class="hover:text-green-600">About</a>
-          <a href="#work" class="hover:text-green-600">Work</a>
-          <a href="#education" class="hover:text-green-600">Education</a>
-          <a href="#skills" class="hover:text-green-600">Skills</a>
-          <a href="#projects" class="hover:text-green-600">Projects</a>
-        </nav>
-
-        <!-- Dropdown for smaller screens -->
-        <div class="md:hidden flex items-center">
-          <button @click="toggleMobileMenu" class="text-gray-700 focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-          </button>
-        </div>
-
-        <!-- Right-aligned links (Social icons and GitHub link) -->
-        <div class="hidden md:flex space-x-4 items-center">
-          <a href="https://twitter.com/vuejs" aria-label="Twitter" class="text-gray-700 hover:text-green-600">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="..."></path></svg>
-          </a>
-          <a href="https://github.com/vuejs/vue" aria-label="GitHub" class="text-gray-700 hover:text-green-600">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="..."></path></svg>
-          </a>
-          <div  class="hover:text-green-600 cursor-pointer">
-            v1.0.0
-          </div>
-        </div>
+    <header  class="shadow-md">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <!-- Logo -->
+      <div class="flex items-center space-x-3">
+        <a href="/resume" class="flex items-center">
+          <span :class="{'text-xl font-semibold ml-2': true, 'text-gray-900': !isDarkMode, 'text-white': isDarkMode}">Tapiwa Motsi</span>
+        </a>
       </div>
 
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" v-if="isMobileMenuOpen" class=" md:hidden">
-        <nav class="flex flex-col space-y-2 px-4 py-3 text-gray-700">
-          <a href="#about" class="hover:text-green-600">About</a>
-          <a href="#work" class="hover:text-green-600">Work</a>
-          <a href="#education" class="hover:text-green-600">Education</a>
-          <a href="#skills" class="hover:text-green-600">Skills</a>
-          <a href="#projects" class="hover:text-green-600">Projects</a>
-        </nav>
-      
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex space-x-8" :class="{'text-gray-700': !isDarkMode, 'text-gray-300': isDarkMode}">
+        <a href="#about" class="hover:text-green-600">About</a>
+        <a href="#work" class="hover:text-green-600">Work</a>
+        <a href="#education" class="hover:text-green-600">Education</a>
+        <a href="#skills" class="hover:text-green-600">Skills</a>
+        <a href="#projects" class="hover:text-green-600">Projects</a>
+      </nav>
+
+      <!-- Dropdown for smaller screens -->
+      <div class="md:hidden flex items-center">
+        <button @click="toggleMobileMenu" class="text-gray-700 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
       </div>
-    </header>
+
+      <!-- Right-aligned links (Social icons, GitHub link, and Dark Mode Toggle) -->
+      <div class="hidden md:flex space-x-4 items-center">
+        <a href="https://twitter.com/vuejs" aria-label="Twitter" :class="{'text-gray-700': !isDarkMode, 'text-gray-300': isDarkMode}">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="..."></path></svg>
+        </a>
+        <a href="https://github.com/vuejs/vue" aria-label="GitHub" :class="{'text-gray-700': !isDarkMode, 'text-gray-300': isDarkMode}">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="..."></path></svg>
+        </a>
+        <div class="hover:text-green-600 cursor-pointer">
+          v1.0.0
+        </div>
+     
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" v-if="isMobileMenuOpen" class="md:hidden">
+      <nav class="flex flex-col space-y-2 px-4 py-3" :class="{'text-gray-700': !isDarkMode, 'text-gray-300': isDarkMode}">
+        <a href="#about" class="hover:text-green-600">About</a>
+        <a href="#work" class="hover:text-green-600">Work</a>
+        <a href="#education" class="hover:text-green-600">Education</a>
+        <a href="#skills" class="hover:text-green-600">Skills</a>
+        <a href="#projects" class="hover:text-green-600">Projects</a>
+      </nav>
+    </div>
+  </header>
 
     <!-- Landing Section -->
     <section class="text-center mt-20">

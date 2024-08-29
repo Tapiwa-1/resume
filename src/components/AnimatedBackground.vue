@@ -19,7 +19,7 @@
                                 mode: 'push'
                             },
                             onHover: {
-                                enable: false,
+                                enable: true,
                                 mode: 'repulse'
                             },
                         },
@@ -34,8 +34,8 @@
                                 quantity: 4
                             },
                             repulse: {
-                                distance: 200,
-                                duration: 0.4
+                                distance: 100,
+                                duration: 1
                             }
                         }
                     },
