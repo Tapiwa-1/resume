@@ -93,7 +93,10 @@
     </section>
     <!-- Work Experience -->
       <section id="work"class="mt-12 md:mt-16 px-4 md:px-0">
-        <Work/>
+        
+        <div class="max-w-4xl mx-auto text-justify">
+          <Work/>
+        </div>
       </section>
 
        <!-- School Experience -->
