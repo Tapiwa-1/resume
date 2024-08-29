@@ -92,18 +92,18 @@
       </div>
     </section>
     <!-- Work Experience -->
-      <section id="work"class="max-w-4xl  mx-auto  mt-20">
+      <section id="work"class="mt-12 md:mt-16 px-4 md:px-0">
         <Work/>
       </section>
 
        <!-- School Experience -->
-  <section id="education"class="max-w-4xl mx-auto mt-20">
+  <section id="education"class="mt-12 md:mt-16 px-4 md:px-0">
     <Education/>
   </section>
-  <section id="skills"class="max-w-4xl mx-auto mt-20">
+  <section id="skills"class="mt-12 md:mt-16 px-4 md:px-0">
      <Skills/>
   </section>
-  <section id="projects" class="max-w-4xl mx-auto mt-20">
+  <section id="projects" class="mt-12 md:mt-16 px-4 md:px-0">
    <Projects/>
   </section>
   <Footer/>
