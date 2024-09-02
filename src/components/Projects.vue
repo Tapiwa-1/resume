@@ -31,7 +31,7 @@ import { ref} from 'vue';
 const projects = ref([
     {
         id:1,
-        name:"Online Procrument System",
+        name:"Online Procurument System",
         link:"https://github.com/Tapiwa-1/procurement",
         src:"https://github.com/Tapiwa-1/procurement/raw/main/public/img/4.png"
     },
