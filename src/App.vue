@@ -59,7 +59,7 @@
 
     <!-- Landing Section -->
     <section class="text-center mt-20">
-      <h1 class="text-4xl md:text-8xl font-bold bg-gradient-to-r from-green-900 to-blue-400 text-transparent bg-clip-text">
+      <h1 class="text-4xl md:text-8xl font-bold bg-gradient-to-r from-green-500 to-blue-400 text-transparent bg-clip-text inline-block">
         Tapiwa Motsi
       </h1>
       <p class="text-xl md:text-4xl font-extrabold text-gray-600 mt-4">
