@@ -48,7 +48,7 @@ const projects = ref([
         name:"Tradional Leaders Portal",
         description:"",
         link:"https://github.com/Tapiwa-1/localmlg",
-        src:"https://media.licdn.com/dms/image/v2/D4D2DAQHsrALDVrJHRw/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1702473999343?e=1725343200&v=beta&t=6L2AIKNRqOYAXFNmpMquJ9pfcuiZzEps7noEt8I01t4"
+        src:"../assets/projects/procrument.jpeg"
 
     },
     {
@@ -56,7 +56,7 @@ const projects = ref([
         name:"Harare Insititute of Technology Clinic HiT Clinic",
         description:"",
         link:"https://github.com/Tapiwa-1/hospital-system",
-        src:"https://media.licdn.com/dms/image/v2/D4D2DAQGgqe5PnCR2Sg/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1702474144670?e=1725346800&v=beta&t=4MTPAOSSFvf7lna3LQ9FKycKjCsAkNqYt4YjGy7gWC8"
+        src:"https://github.com/Tapiwa-1/Tapiwa-1/raw/main/hitclinic-main.png"
 
     }
 ])

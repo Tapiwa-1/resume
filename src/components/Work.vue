@@ -68,7 +68,7 @@ const job = {
 }
 
 .slide-up {
-  max-height: 100px; /* Adjust according to the maximum content size */
+  max-height: 120px; /* Adjust according to the maximum content size */
   opacity: 1;
 }
 
