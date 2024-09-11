@@ -48,7 +48,7 @@ const projects = ref([
         name:"Tradional Leaders Portal",
         description:"",
         link:"https://github.com/Tapiwa-1/localmlg",
-        src:"../assets/projects/procrument.jpeg"
+        src:"https://github.com/Tapiwa-1/resume/blob/main/src/assets/procrument.jpeg"
 
     },
     {
